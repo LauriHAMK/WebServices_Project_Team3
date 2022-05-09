@@ -48,7 +48,7 @@
             <div class="main">
                 <div class="container" style="text-align: center;">
                     <div class="sign-up-content">
-                        <a href="/jsp/adminPage.jsp" class="button">Palaa etusivulle</a><br><br>
+                        <a href="/jsp/restfulyllapito.jsp" class="button">Palaa ylläpitoon</a><br><br>
                         <a href="/rest/addquestion/addnewquestionpage" class="button">Lisää kysymys</a>
                         <a href="/rest/deletequestion/getquestionstodelete" class="button">Poista kysymys</a><br><br>
                         <a href="/rest/editquestion/getquestionstoedit" class="button">Muokkaa kysymystä</a>
