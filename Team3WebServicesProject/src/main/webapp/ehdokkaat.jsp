@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Books Client</title>
+<title>Ehdokas Client</title>
 <script src="jquery-3.5.1.min.js"></script>
 <script>
   $(document).ready( 
