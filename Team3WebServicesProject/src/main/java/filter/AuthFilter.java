@@ -33,7 +33,8 @@ import data.admin;
 				DispatcherType.ERROR
 		}
 		, urlPatterns = {
-				"/jsp/AddAdmin.jsp"
+				"/jsp/AddAdmin.jsp",
+				"/jsp/restfulyllapito.jsp"
 				
 })//Which URI's come through this filter
 public class AuthFilter implements Filter {
