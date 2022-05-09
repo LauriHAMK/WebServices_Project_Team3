@@ -77,7 +77,10 @@ public class Adminservice {
 			em.getTransaction().begin();
 			em.persist(admin);
 			em.getTransaction().commit();
+			
 			return admin;
+
+			
 			
 		}
 		@GET
