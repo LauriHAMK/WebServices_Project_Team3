@@ -7,13 +7,62 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import java.util.List;
+import javax.persistence.Persistence;
+import data.*;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
 import app.*;
 
-/**
- * @author Miska, Lauri
- */
-
 public class dao {
+
+  EntityManagerFactory emf = Persistence.createEntityManagerFactory("Vaalikone");
+
+  public List < Kysymykset > getAllQuestions() {
+    EntityManager em = emf.createEntityManager();
+    List < Kysymykset > questionlist = em.createQuery("select a from Kysymykset a").getResultList();
+    em.close();
+
+    return questionlist; 
+  }
+
+  public void addQuestion(Kysymykset k) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    em.persist(k);
+    em.getTransaction().commit();
+    em.close();
+  }
+
+  public void deleteQuestionById(int id) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    Object k = em.createQuery("SELECT a FROM Kysymykset a WHERE a.kysymysId=?1").setParameter(1, id).getSingleResult();
+    em.remove(k);
+    em.getTransaction().commit();
+    em.close();
+  }
+
+  public Kysymykset getQuestionById(int id) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    Kysymykset k = em.find(Kysymykset.class, id);
+    em.getTransaction().commit();
+    em.close();
+    return k;
+
+  }
+
+  public void editQuestion(Kysymykset kysymys) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    em.merge(kysymys);
+    em.getTransaction().commit();
+    em.close();
+  }
+
+
 	private static Connection conn;
 	public dao() {
 		try {
@@ -328,7 +377,5 @@ public class dao {
 			}
 		}
 		
-	}
-		
-	
+	}	
 }

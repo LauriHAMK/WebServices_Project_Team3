@@ -5,6 +5,7 @@
 	
 	<persistence-unit name="Vaalikone">
 	<class>data.admin</class>
+	<class>data.Kysymykset</class>
 		
 <!-- If using MySQL 5.7 -->
 <!--  
