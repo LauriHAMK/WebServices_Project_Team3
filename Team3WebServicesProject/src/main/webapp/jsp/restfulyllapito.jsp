@@ -18,6 +18,9 @@
     
      <tr>
         <td><a href='./index.jsp'>Home</a></td>
+        <td><a href="/rest/addquestion/addnewquestionpage">Lis‰‰ kysymys</a>
+        <td><a href="/rest/deletequestion/getquestionstodelete">Poista kysymyksi‰</a></td>
+        <td><a href="/rest/editquestion/getquestionstoedit">Muokkaa kysymyksi‰</a></td>
       </tr>
       
 
