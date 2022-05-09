@@ -17,7 +17,10 @@
     <table>
     
      <tr>
-        <td><a href='./index.jsp'>Home</a></td>
+        <td><a href='./index.jsp'>Koti</a></td>
+        </tr>
+                <tr>
+        <td><a href="/jsp/addadmin.jsp">Lis‰‰ admin</a>
         </tr>
         <tr>
         <td><a href="/rest/addquestion/addnewquestionpage">Lis‰‰ kysymys</a>

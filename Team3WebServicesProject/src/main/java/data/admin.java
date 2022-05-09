@@ -36,6 +36,12 @@ public class admin implements Serializable  {
 		this.username = username;
 		this.password = password;
 	}
+	public admin(String username, String password, String login) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.login = username+":"+password;
+	}
 	
 	
 	public admin(int id, String username, String password, String login) {
@@ -43,7 +49,7 @@ public class admin implements Serializable  {
 		this.id = id;
 		this.username = username;
 		this.password = password;
-		this.login = login;
+		this.login = username+":"+password;
 	}
 	public int getId() {
 		return id;
@@ -67,7 +73,7 @@ public class admin implements Serializable  {
 		return login;
 	}
 	public void setLogin(String login) {
-		this.login = login;
+		this.login = username+":"+password;
 	}
 	@Override
 	public String toString() {
