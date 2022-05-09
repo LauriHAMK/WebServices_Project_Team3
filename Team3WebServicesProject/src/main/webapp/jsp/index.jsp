@@ -29,7 +29,7 @@
                     <li><a href="index.jsp" class="active">Etusivu</a></li>
                     <li><a href="/showcandidates">Kaikki ehdokkaat</a></li>
                     <li><a href="/showquestions">Vastaa kysymyksiin</a></li>
-                    <li><a href="login.jsp">Kirjaudu sis‰‰n</a></li>
+                    <li><a href="/jsp/restfulyllapito.jsp">Kirjaudu sis‰‰n</a></li>
                
                  <%
         if ((request.getSession(false).getAttribute("AdminUser") == null)) {

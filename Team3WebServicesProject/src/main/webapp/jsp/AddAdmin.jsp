@@ -43,7 +43,7 @@ Password: <input id='password' type='password' name='password' value='' placehol
 </p>
 <p id='inparts'>The response in parts will be shown here!
 </p>
-<h2>Fill in - this form uses FormParameters</h2>
+<h2>Fill in - this form adds admin</h2>
 <form action="../rest/adminservice/addadmin" method='post'>
 Username: <input id='username' type='text' name='username' value='' placeholder='New Username'><br>
 Password: <input id='password' type='password' name='password' value='' placeholder='New Password'><br>

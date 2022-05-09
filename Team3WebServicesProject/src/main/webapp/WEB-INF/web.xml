@@ -10,17 +10,17 @@
   
   <context-param>
         <param-name>jdbcURL</param-name>
-        <param-value>jdbc:mysql://localhost:3306/vaali</param-value>
+        <param-value>jdbc:mysql://localhost:3306/vaalikone</param-value>
     </context-param>
  
     <context-param>
         <param-name>jdbcUsername</param-name>
-        <param-value>root</param-value>
+        <param-value>appuser</param-value>
     </context-param>
  
     <context-param>
         <param-name>jdbcPassword</param-name>
-        <param-value>mypass</param-value>
+        <param-value>kukkuu</param-value>
     </context-param>
  
     <servlet>
