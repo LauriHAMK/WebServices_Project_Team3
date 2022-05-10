@@ -33,6 +33,13 @@
       </tr>
           <tr>
         <td><a href="/ehdokasform.jsp">lis‰‰ ehdokas</a></td>
+       
+      </tr>
+      
+            </tr>
+          <tr>
+        <td><a href="/jsp/login.jsp">server programmin login ja session asetus AdminUser</a></td>
+       
       </tr>
       
     </table>
