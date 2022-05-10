@@ -13,7 +13,18 @@
         <h1>Ehdokas Management</h1>
         
         <h2>
-            <a href="/new">Lisää uusi ehdokas</a>
+        <% 
+            if ((request.getSession(false).getAttribute("AdminUser") == null)) {
+                %>
+                   
+                <%
+                    } 
+                    else {
+                %>
+                <a href="/new">Lisää uusi ehdokas</a>
+                <%
+                    }
+                %>
             &nbsp;&nbsp;&nbsp;
             <a href="/list">Lista kaikista Ehdokkaista</a>
             
@@ -40,9 +51,20 @@
                     <td><c:out value="${ehdokas.nimi}" /></td>
                     <td><c:out value="${ehdokas.ika}" /></td>
                     <td>
-                        <a style="color:#6688CC;" href="/edit?id=<c:out value='${ehdokas.id}' />">Edit</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a style="color:#d02424;" href="/delete?id=<c:out value='${ehdokas.id}' />">Delete</a>                     
+                         <% 
+                        if ((request.getSession(false).getAttribute("AdminUser") == null)) {
+                            %>
+                               
+                            <%
+                                } 
+                                else {
+                            %>
+                            <a style="color:#6688CC;" href="/edit?id=<c:out value='${ehdokas.id}' />">Edit</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a style="color:#d02424;" href="/delete?id=<c:out value='${ehdokas.id}' />">Delete</a>
+                            <%
+                                }
+                            %>                    
                     </td>
                 </tr>
             </c:forEach>

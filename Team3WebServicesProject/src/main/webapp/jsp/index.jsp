@@ -27,7 +27,7 @@
             <li class="logo"> <a class="logoA"><img class="logoImg" src="./kuvat/voteIcon.png" alt="LOGO" style="height: 100%; width: 2.3vw; float: left; margin-right: 0.5vw; ">Vaalikone</a></li>
             <div id="menu-items">
                     <li><a href="index.jsp" class="active">Etusivu</a></li>
-                    <li><a href="/showcandidates">Kaikki ehdokkaat</a></li>
+                    <li><a href="/list">Kaikki ehdokkaat</a></li>
                     <li><a href="/showquestions">Vastaa kysymyksiin</a></li>
                     <li><a href="/jsp/restfulyllapito.jsp">Kirjaudu sisään</a></li>
                
@@ -39,7 +39,7 @@
         } 
         else {
     %>
-           <li ><a href="./yllapito.jsp">ylläpito</a></li>
+           <li ><a href="./yllapito.jsp">yllÃ¤pito</a></li>
     <%
         }
     %>
@@ -63,7 +63,7 @@
          </div>
         <div class="hull">
             <img src="./kuvat/voteCounts.png" style="margin-right:10%; float:right; width:20%; height:100%;">
-            <p class="hullText" >Sivumme tarkoitus on kysyä sinulta kysymyksiä ehdokkaista ja niiden avulla näyttää juuri sinulle parhaan ehdokkaan. </p>
+            <p class="hullText" >Sivumme tarkoitus on kysyä sinulta kysymyksiä ehdokkaista ja niiden avulla löydämme juuri sinulle parhaan ehdokkaan. </p>
          </div>
     </div>
 
@@ -74,8 +74,8 @@
     </div>
 
     <div class="footer">
-        <h4 class="tekijï¿½">Sivun tekijät Lauri Jokinen, Miska Luukkonen, Juha Kärnä</h4>
-        <h4 class="copiright">@ 2022 Lauri Jokinen, Miska Luukkonen, Juha Kärnä All rights reserved</h4>
+        <h4 class="tekijï¿½">Sivun tekijät Lauri Jokinen, Miska Luukkonen, Juha Kï¿½rnï¿½</h4>
+        <h4 class="copiright">@ 2022 Lauri Jokinen, Miska Luukkonen, Juha Kï¿½rnï¿½ All rights reserved</h4>
         <div style="clear: both"></div>
     </div>
 

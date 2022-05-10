@@ -35,7 +35,11 @@ import data.admin;
 		, urlPatterns = {
 				"/jsp/AddAdmin.jsp",
 				"/jsp/restfulyllapito.jsp",
-				"/rest/adminservice/*"
+				"/rest/adminservice/*",
+				"/rest/addquestion/addnewquestionpage",
+				"/rest/deletequestion/getquestionstodelete",
+				"/rest/editquestion/getquestionstoedit",
+				"/ehdokasform.jsp"
 				
 })//Which URI's come through this filter
 public class AuthFilter implements Filter {

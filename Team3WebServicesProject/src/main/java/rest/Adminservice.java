@@ -68,15 +68,20 @@ public class Adminservice {
 		@Path("/addadmin")
 		@Produces(MediaType.APPLICATION_JSON)
 		@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-		public admin postAdminByParams(@FormParam("username") String username, @FormParam("password") String password) {
-			 	
-			admin admin=new admin(username, password);
+		public admin postAdminByParams(@FormParam("username") String username, @FormParam("password") String password, String login) {
+			
+	
+			admin admin=new admin(username, password, login);
 			EntityManagerFactory emf=Persistence.createEntityManagerFactory("Vaalikone");
 			EntityManager em=emf.createEntityManager();
 			em.getTransaction().begin();
 			em.persist(admin);
 			em.getTransaction().commit();
+			
 			return admin;
+
+			
+			
 		}
 		@GET
 		@Path("/readadmin")
