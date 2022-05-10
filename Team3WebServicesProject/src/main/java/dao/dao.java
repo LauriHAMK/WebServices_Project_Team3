@@ -16,7 +16,8 @@ import javax.persistence.EntityManagerFactory;
 import app.*;
 
 public class dao {
-
+	
+  //web services alku
   EntityManagerFactory emf = Persistence.createEntityManagerFactory("Vaalikone");
 
   public List < Kysymykset > getAllQuestions() {
@@ -38,7 +39,7 @@ public class dao {
   public void deleteQuestionById(int id) {
     EntityManager em = emf.createEntityManager();
     em.getTransaction().begin();
-    Object k = em.createQuery("SELECT a FROM Kysymykset a WHERE a.kysymysId=?1").setParameter(1, id).getSingleResult();
+    Kysymykset k = em.find(Kysymykset.class, id);
     em.remove(k);
     em.getTransaction().commit();
     em.close();
@@ -54,15 +55,16 @@ public class dao {
 
   }
 
-  public void editQuestion(Kysymykset kysymys) {
+  public void editQuestion(Kysymykset k) {
     EntityManager em = emf.createEntityManager();
     em.getTransaction().begin();
-    em.merge(kysymys);
+    em.merge(k);
     em.getTransaction().commit();
     em.close();
-  }
-
-
+  }  
+  //web services loppu
+  
+  //server programming alku
 	private static Connection conn;
 	public dao() {
 		try {
@@ -375,7 +377,7 @@ public class dao {
 			} catch (SQLException e) {
 
 			}
-		}
-		
+		}		
 	}	
+	//server programming loppu
 }
