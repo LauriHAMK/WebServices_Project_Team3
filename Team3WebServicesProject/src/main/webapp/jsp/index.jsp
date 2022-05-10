@@ -29,7 +29,7 @@
                     <li><a href="index.jsp" class="active">Etusivu</a></li>
                     <li><a href="/list">Kaikki ehdokkaat</a></li>
                     <li><a href="/showquestions">Vastaa kysymyksiin</a></li>
-                    <li><a href="/jsp/restfulyllapito.jsp">Kirjaudu sisÃ¤Ã¤n</a></li>
+                    <li><a href="/jsp/restfulyllapito.jsp">Kirjaudu sisään</a></li>
                
                  <%
         if ((request.getSession(false).getAttribute("AdminUser") == null)) {
@@ -59,11 +59,11 @@
     <div class="row">
         <div class="intro">
             <img src="./kuvat/pplWithVote.jfif" style="margin-left:8%; float:left; width:20%; height:100%;">
-            <p class="introText">Tervetuloa vaali sivullemme <br> <br> <br>Kaikki ehdokkaat kohdasta lï¿½ydï¿½t kaikki ehdokkaat ja vastaa kysymyksiin kohdasta pï¿½ï¿½set vastailemaan kysymyksiin joiden avulla tiedï¿½mme kuka on juuri sinulle paras ehdokas. </p>
+            <p class="introText">Tervetuloa vaali sivullemme <br> <br> <br>Kaikki ehdokkaat kohdasta löydät kaikki ehdokkaat ja vastaa kysymyksiin kohdasta pääset vastailemaan kysymyksiin joiden avulla tiedämme kuka on juuri sinulle paras ehdokas. </p>
          </div>
         <div class="hull">
             <img src="./kuvat/voteCounts.png" style="margin-right:10%; float:right; width:20%; height:100%;">
-            <p class="hullText" >Sivumme tarkoitus on kysyÃ¤ sinulta kysymyksiï¿½ ehdokkaista ja niiden avulla nï¿½yttï¿½ï¿½ juuri sinulle parhaan ehdokkaan. </p>
+            <p class="hullText" >Sivumme tarkoitus on kysyä sinulta kysymyksiä ehdokkaista ja niiden avulla löydämme juuri sinulle parhaan ehdokkaan. </p>
          </div>
     </div>
 
@@ -74,7 +74,7 @@
     </div>
 
     <div class="footer">
-        <h4 class="tekijï¿½">Sivun tekijï¿½t Lauri Jokinen, Miska Luukkonen, Juha Kï¿½rnï¿½</h4>
+        <h4 class="tekijï¿½">Sivun tekijät Lauri Jokinen, Miska Luukkonen, Juha Kï¿½rnï¿½</h4>
         <h4 class="copiright">@ 2022 Lauri Jokinen, Miska Luukkonen, Juha Kï¿½rnï¿½ All rights reserved</h4>
         <div style="clear: both"></div>
     </div>

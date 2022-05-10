@@ -31,9 +31,9 @@
         <tr>
         <td><a href="/rest/editquestion/getquestionstoedit">Muokkaa kysymyksi‰</a></td>
       </tr>
-      
-
-
+          <tr>
+        <td><a href="/ehdokasform.jsp">lis‰‰ ehdokas</a></td>
+      </tr>
       
     </table>
   </body>

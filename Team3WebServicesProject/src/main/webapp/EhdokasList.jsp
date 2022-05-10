@@ -13,6 +13,7 @@
         <h1>Ehdokas Management</h1>
         
         <h2>
+        <% 
             if ((request.getSession(false).getAttribute("AdminUser") == null)) {
                 %>
                    
@@ -50,7 +51,7 @@
                     <td><c:out value="${ehdokas.nimi}" /></td>
                     <td><c:out value="${ehdokas.ika}" /></td>
                     <td>
-                         
+                         <% 
                         if ((request.getSession(false).getAttribute("AdminUser") == null)) {
                             %>
                                
