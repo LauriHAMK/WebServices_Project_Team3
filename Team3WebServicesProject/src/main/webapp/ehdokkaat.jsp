@@ -6,6 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Ehdokas Client</title>
 <script src="jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./style.css"/>
 <script>
   $(document).ready( 
 	function() {
@@ -37,9 +38,10 @@
   
   function showUpdateResult(result) {
 		 if (result.status == 200)
-		    alert("Updated Successfully");
-		 else
 		    alert("Sorry! Could not update ehdokas!");
+		 else
+		    alert("Updated Successfully");
+		 location.reload();
   }
 
   function deleteEhdokas() {
@@ -57,7 +59,8 @@
 		 if (result.status != 404)
 		    alert("Deleted Successfully");
 		 else
-		    alert("Sorry! Could not delete book!");
+		    alert("Sorry! Could not delete ehdokas!");
+		 location.reload();
   }
 	
   function addEhdokas() {
@@ -79,14 +82,21 @@
 </script>
 </head>
 <body>
-	<h2>Ehdokkaat</h2>
+	<div class="header">
+	<h1>Ehdokkaat</h1>
+	</div>
+	<div class="row">	
+    <div class="container">
+    <div align="center">
 	<ul id="ehdokkaat">
 	</ul>
-
-	<h3>Update or Delete Ehdokas</h3>
+	
+	<div style="font-size: 1vw;">
+	<h3 style="border-top:0.5px solid white;">Update or Delete Ehdokas (Dont delete Ehdokas ID 1)</h3>
 	Ehdokas Id
 	<br />
 	<input type="text" id="id" /> 
+	<p />
 	<button onclick="deleteEhdokas()">Delete </button>
 	<p />
 	Ika
@@ -95,7 +105,7 @@
 	<p />
 	<button onclick="updateIka()">Update ika</button>
 
-	<h3>Add Ehdokas</h3>
+	<h3 style="border-top:0.5px solid white;">Add Ehdokas</h3>
 	Nimi
 	<br />
 	<input type="text" id="nimi" />
@@ -105,5 +115,10 @@
 	<input type="text" id="ika" />
 	<p />
 	<button onclick="addEhdokas()">Add Ehdokas</button>
+	</div>
+	
+     </div>
+       </div>
+       </div>
 </body>
 </html>

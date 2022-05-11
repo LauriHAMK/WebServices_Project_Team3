@@ -44,8 +44,8 @@ p {
 
 input {
     padding: 7px 10px;
-    width: 100%;
-    margin: 8px 0;
+    width: 40%;
+    
     display: inline-block;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -54,18 +54,18 @@ input {
     font-family: 'Dosis', sans-serif;
 }
 
-#painike {
-    padding: 12px 30px;
+button {
+    padding: 7px 10px;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 8px;
     background-color: #0049FF;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 0.8vw;
     cursor: pointer;
     font-family: 'Dosis', sans-serif;
 }
-#painike:hover {
+button:hover {
     border: 1px solid #000000;
     background-color: #FF4838;
 
@@ -77,13 +77,13 @@ input {
 
 li {
     width: 60%;
+    text-align:center;
     background-color: #6688CC;
     padding: 12px 30px;
     border: 1px solid #000000;
     border-radius: 8px;
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
-    text-align: left;
     margin: 0 auto;
     margin-bottom: 6px;
     cursor: pointer;
@@ -97,24 +97,9 @@ li {
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5 ease;
 }
-li:hover {
-	background: #FF4838;
-}
-
-li > button {
-	font-weight: normal;
-	background: none;
-	border: none;
-	float: right;
-	color: #ffffff;
-	font-weight: 800;
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-}
 
 ul {
-	text-align: left;
+	text-align: center;
 	margin-top: 20px;
 	padding-left: 20px;
 }
